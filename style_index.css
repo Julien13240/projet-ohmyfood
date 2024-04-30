@@ -1,0 +1,36 @@
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 5px 0px 20px #a7a7a7;
+}
+.header_logo {
+  width: 200px;
+  padding: 15px 0px 15px 0px;
+}
+
+.location {
+  background-color: #eaeaea;
+  color: #353535;
+  padding: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location_text {
+  font-size: 16px;
+  font-weight: 500;
+}
+.location_logo {
+  padding-right: 17px;
+}
