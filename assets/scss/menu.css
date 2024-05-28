@@ -1,0 +1,326 @@
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f6f6f6;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  flex-direction: column;
+  position: relative;
+}
+.header .wrapper-logo {
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header .header-logo {
+  width: 200px;
+  padding: 15px 0px 15px 0px;
+}
+.header .location {
+  background-color: rgb(234, 234, 234);
+  color: #353535;
+  padding: 0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: 5px 0px 20px #a7a7a7;
+  gap: 17px;
+}
+.header .location .location-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer {
+  width: 100%;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__bloc {
+  display: inline;
+  padding: 0 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+.footer__bloc .logo {
+  font-family: "Shrikhand";
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+}
+.footer__bloc-links {
+  display: inline-flex;
+  flex-direction: column;
+  width: auto;
+}
+.footer__bloc-link {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  color: white;
+  height: 30px;
+  cursor: pointer;
+}
+.footer__bloc-link:hover .footer__bloc-link__title {
+  text-decoration: none;
+}
+.footer__bloc-link i {
+  margin-right: 7px;
+}
+.footer__bloc-link__title {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  position: relative;
+}
+.header__arrow-back {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35px;
+  top: 25px;
+  font-size: 20px;
+}
+.header__arrow-back a {
+  color: #000;
+}
+
+.menu-img {
+  width: 100%;
+  height: 50vh;
+}
+.menu-img__img {
+  margin-top: -80px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#menu {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  margin-top: -200px;
+  max-width: 1230px;
+  width: 100%;
+  border-radius: 30px 30px 0 0;
+  background-color: #F6F6F6;
+  padding: 0 20px;
+}
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.menu__header__title {
+  font-family: "shrikhand";
+}
+.menu__header .heart-empty {
+  font-size: 30px;
+}
+.menu__header .heart-full {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  top: -1px;
+  font-size: 31px;
+}
+.menu__header .heart-full:hover {
+  opacity: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.menu__flex {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+.menu__flex__bloc {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.5s forwards;
+}
+.menu__flex__bloc:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.menu__flex__bloc:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.menu__flex__bloc:nth-child(3) {
+  animation-delay: 0.5s;
+}
+.menu__flex__title h3 {
+  font-weight: 400;
+  position: relative;
+  text-transform: uppercase;
+}
+.menu__flex__title h3::after {
+  content: "";
+  width: 50px;
+  height: 4px;
+  background: #99e2d0;
+  position: absolute;
+  z-index: 20;
+  left: 0px;
+  bottom: -8px;
+}
+.menu__flex__case {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.menu__flex__case:hover .menu-selected,
+.menu__flex__case .menu__case__price {
+  right: 0;
+}
+.menu__flex__case .dish-and-price {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.menu__flex__case .dish-and-price p {
+  margin: 0;
+}
+.menu__case__dish {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.menu__case__dish h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__case__dish p {
+  margin: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu__case__dish-title {
+  font-weight: bold;
+}
+.menu__case__dish-subtitle {
+  margin-left: 20px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu__case__dish-subtitle .menu__case__price {
+  padding-right: 20px;
+  font-weight: bold;
+  padding-left: 7px;
+  position: relative;
+  right: 0;
+  transition: right 0.5s ease-in-out;
+}
+
+.contain-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.contain-button__button {
+  box-sizing: border-box;
+  width: 218px;
+  height: 50px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 25px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  transition: all 0.5s ease-in-out;
+}
+.contain-button__button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu-selected {
+  position: absolute;
+  right: -58px;
+  height: 100%;
+  width: 58px;
+  background-color: #99E2D0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: right 0.5s ease-in-out;
+}
+.menu-selected:hover {
+  right: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .main__step {
+    width: 100%;
+  }
+  .main__steps {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .footer__bloc {
+    margin-bottom: 15px;
+  }
+  .footer__bloc-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+  }
+}/*# sourceMappingURL=menu.css.map */
