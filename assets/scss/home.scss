@@ -48,12 +48,13 @@
 
 	100% {
 		opacity: 0;
+		z-index: -1;
 	}
 }
 
 .spinner {
 	height: 100%;
-	background: white;
+	background: #e3e1e187;
 	margin: auto;
 	position: fixed;
 	top: 0;
@@ -62,7 +63,6 @@
 	bottom: 0;
 	z-index: 20;
 	animation: fade-out 0.5s ease-out 1s forwards;
-	visibility: hidden;
 	opacity: 1;
 }
 
@@ -196,7 +196,7 @@
 .restaurant {
 	width: 100%;
 	background-color: #f2f2f2;
-	max-width: 1200px;
+
 	box-sizing: border-box;
 	padding: 14px;
 
@@ -227,7 +227,7 @@
 		filter: drop-shadow(0px 3px 3px (rgba 0, 0, 0, 0.07));
 		width: 100%;
 		position: relative;
-		max-width: 1200px;
+
 
 		.restaurant-img {
 			width: 100%;
