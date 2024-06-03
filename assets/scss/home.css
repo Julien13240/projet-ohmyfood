@@ -47,15 +47,19 @@ body {
 }
 .footer__bloc {
   display: inline;
-  padding: 0 40px;
+  padding: 0 25px;
   width: 100%;
   max-width: 1200px;
+  margin-bottom: 20px;
 }
 .footer__bloc .logo {
   font-family: "Shrikhand";
   color: white;
   font-size: 20px;
-  padding: 15px 0;
+  padding: 0;
+}
+.footer__bloc .logo h3 {
+  font-weight: normal;
 }
 .footer__bloc-links {
   display: inline-flex;
@@ -258,6 +262,7 @@ body {
 .restaurant {
   width: 100%;
   background-color: #f2f2f2;
+  margin-bottom: 50px;
   box-sizing: border-box;
   padding: 14px;
 }
