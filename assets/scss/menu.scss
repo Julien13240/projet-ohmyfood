@@ -1,14 +1,7 @@
 @use "variables" as var;
-
 @use "mixins" as mix;
-
 @use "layout";
-
 @use "footer";
-
-
-
-
 
 
 a {
@@ -29,7 +22,7 @@ a {
         top: 25px;
         font-size: 20px;
 
-        & a {
+        a {
             color: #000;
         }
     }
@@ -45,7 +38,6 @@ a {
         height: 100%;
         object-fit: cover;
     }
-
 }
 
 #menu {
@@ -58,13 +50,10 @@ a {
 }
 
 .menu {
-
     max-width: 1230px;
     width: 100%;
     border-radius: 30px 30px 0 0;
     background-color: #F6F6F6;
-    padding: 0 20px;
-
 
     &__header {
         display: flex;
@@ -72,6 +61,7 @@ a {
         align-items: center;
         justify-content: space-between;
         position: relative;
+        padding: 0 20px;
 
         &__title {
             font-family: 'shrikhand';
@@ -79,7 +69,6 @@ a {
 
         .heart-empty {
             font-size: 30px;
-
         }
 
         .heart-full {
@@ -89,7 +78,6 @@ a {
             top: -1px;
             font-size: 31px;
 
-
             &:hover {
                 opacity: 1;
                 background-clip: text;
@@ -98,7 +86,6 @@ a {
                 background-image: var.$gradient;
                 transition-property: all;
                 transition-duration: 0.5s;
-
             }
         }
     }
@@ -107,6 +94,7 @@ a {
         display: flex;
         gap: 40px;
         flex-direction: column;
+        padding: 0 20px;
 
         &__bloc {
             display: flex;
@@ -130,7 +118,7 @@ a {
         }
 
         &__title {
-            & h3 {
+            h3 {
                 font-weight: 400;
                 position: relative;
                 text-transform: uppercase;
@@ -170,20 +158,18 @@ a {
             &:hover {
                 .menu-selected {
                     right: 0;
-
                 }
 
-                .menu__case__price {
+                .menu__case__price,
+                .menu__case__dish h3 {
                     padding-right: 70px;
                 }
             }
-
 
             .dish-and-price {
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-
 
                 p {
                     margin: 0;
@@ -193,14 +179,10 @@ a {
     }
 
     &__case {
-
-
         &__dish {
             margin-left: 20px;
             font-weight: bold;
             font-size: 18px;
-
-
 
             h3 {
                 margin: 0;
@@ -213,14 +195,10 @@ a {
                     overflow: hidden;
                     white-space: nowrap;
                 }
-
             }
-
-
 
             &-title {
                 font-weight: bold;
-
             }
 
             &-subtitle {
@@ -242,19 +220,11 @@ a {
                     padding-left: 7px;
                     position: relative;
                     transition: all 0.5s ease-in-out;
-
-
-
                 }
             }
         }
-
-
     }
-
-
 }
-
 
 
 .contain-button {
@@ -263,7 +233,6 @@ a {
     align-items: center;
     width: 100%;
     margin-bottom: 40px;
-
 
     &__button {
         box-sizing: border-box;
@@ -283,7 +252,6 @@ a {
 }
 
 .menu-selected {
-
     position: absolute;
     right: -58px;
     height: 100%;
@@ -300,13 +268,9 @@ a {
     &:hover {
         right: 0;
     }
-
-
 }
 
 @media screen and (min-width: 800px) {
-
-
     .main__step {
         width: 100%;
     }
