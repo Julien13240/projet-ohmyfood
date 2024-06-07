@@ -259,12 +259,21 @@ body {
   flex-direction: column;
 }
 
-.restaurant {
+.restaurant-container {
   width: 100%;
   background-color: #f2f2f2;
   margin-bottom: 50px;
   box-sizing: border-box;
   padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurant-container .restaurant-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
 }
 
 .restaurant-cards {
@@ -272,6 +281,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 45%;
 }
 .restaurant-cards a {
   width: 100%;
@@ -353,7 +363,16 @@ a {
   color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 1024px) {
+  .restaurant-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
   .main__step {
     width: 100%;
   }
